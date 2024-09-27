@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Rabiscado;
+    src: url(fontes/Sriracha-Regular.ttf) format(truetype);
+    font-weight: 200;
+    font-style: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,30 +21,26 @@
 
 :root {
     --font00: 'Grand', sans-serif;
+    --font01: 'Rabiscado'
 }
 
-body {
+html, body {
     min-height: 100vh;
-    background-color: darkgray;
-    margin: 0px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     background-color: black;
     color: white;
-    font-size: 8vh;
     text-align: center;
-}
-
-header > p > a {
-    color: white;
-    text-decoration: none;
 }
 
 header > h1 {
     font-family: var(--font00);
-    padding: 50px 50px 30px 50px;
+    padding: 50px;
     font-variant: small-caps;
+    font-size: 10vh;
 }
 
 header > p {
@@ -48,32 +51,33 @@ header > p {
 }
 
 a {
+    color: white;
+    text-decoration: none;
     font-weight: 700;  
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    margin: auto;
-
     line-height: 2em;
-    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 5.5vh;
-    font-style: italic;
-    font-weight: 700;
-
-    background-color: white;
+    
+    font-family: var(--font01);
+    font-size: 7vh;
 }
 
+section > p {
+    padding-bottom: 1em;
+}
 
 section.imagem {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
+    box-shadow: inset 5px 5px 13px 0px rgba(0, 0, 0, 0.247);
     background-attachment: fixed;
+    background-size: cover; 
 }
 
 section.imagem > p {
@@ -81,7 +85,6 @@ section.imagem > p {
     box-shadow: rgba(0, 0, 0, 0.89) 2px 2px 10px;
     padding: 5px; 
     background-color: rgba(0, 0, 0, 0.418);
-    padding: 5px;
 
     color: white;
     text-shadow: rgba(0, 0, 0, 0.877) 2px 2px 6px;
@@ -89,32 +92,24 @@ section.imagem > p {
 
 #img01 {
     background-image: url(imagens/background001.jpg);
-    background-position: righ center;
-    position: relative;
+    background-position: right center;
 }
 
 #img02 {
     background-image: url(imagens/background002.jpg);
-    background-position: right center;
-    position: relative;
 }
    
 footer {
     padding: 10px;
     background-color: black;
     
+    font-size: 2.8vh;
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
 }
 
 footer > p > a {
     text-decoration: none;
     color: white;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
