@@ -67,7 +67,7 @@ section {
     line-height: 2em;
     
     font-family: var(--font01);
-    font-size: 7vh;
+    font-size: 6.5vh;
 }
 
 section > p {
@@ -97,6 +97,7 @@ section.imagem > p {
 
 #img02 {
     background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
    
 footer {
